@@ -1,21 +1,23 @@
 <template>
   <v-app>
-    <v-title><h1>OUR BEERS</h1></v-title>
-    <v-row>
-      <v-col cols="4" sm="12" md="6">
-        <v-card width="200px" class="mt-5 mx-a" v-for="beer in beers" v-bind:key="beer.id">
-          <v-img src={{beer.image_url}} width="auto" height="auto"></v-img>
-          <v-card-title class="pb-0">
+    <v-title style="text:center;"><h1>OUR BEERS</h1></v-title>
+    <v-container>
+      <v-layout>
+        <v-flex>
+        <v-card width="400px" height="500px" class="m-5 mx-a" v-for="beer in beers" v-bind:key="beer.id">
+          <v-card-title class="pb-0" height="200">
             <h3>{{ beer.name }}</h3>
+            <v-img height="250"  :src="beer.image_url"></v-img>
           </v-card-title>
           <v-card-body>
             <p><b>Tagline</b>  {{beer.tagline}}</p>
-            <p>{{beer.description}}</p>
+            <p style="font-size:11px;">{{beer.description}}</p>
             <p><b>First Brewed</b>  {{beer.first_brewed}}</p>
         </v-card-body>
         </v-card>
-      </v-col>
-    </v-row>
+        </v-flex>
+      </v-layout>
+    </v-container>
   </v-app>
 </template>
 
