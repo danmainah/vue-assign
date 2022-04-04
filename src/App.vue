@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Beers from './components/Beers.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Beers
   }
 }
 </script>
