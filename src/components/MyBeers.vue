@@ -1,7 +1,7 @@
 <template>
-  <div class="hello">
-    <h3>this is it</h3>
-  </div>
+  <v-app>
+    <v-title><h1>OUR BEERS</h1></v-title>
+  </v-app>
 </template>
 
 <script>

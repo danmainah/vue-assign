@@ -1,14 +1,14 @@
 <template>
-  <Beers />
+  <MyBeers />
 </template>
 
 <script>
-import Beers from './components/Beers.vue'
+import MyBeers from './components/MyBeers.vue'
 
 export default {
   name: 'App',
   components: {
-    Beers
+    MyBeers
   }
 }
 </script>
