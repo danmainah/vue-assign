@@ -1,6 +1,15 @@
 <template>
   <v-app>
     <v-title><h1>OUR BEERS</h1></v-title>
+    <v-row>
+      <v-col cols="4" sm="12" md="6">
+        <v-card width="200px" class="mt-5 mx-a" v-for="beer in beers" v-bind:key="beer.id">
+          <v-card-title class="pb-0">
+            <h3>{{ beer.name }}</h3>
+          </v-card-title>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-app>
 </template>
 
